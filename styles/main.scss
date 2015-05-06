@@ -1,0 +1,146 @@
+@import 'normalize.css';
+
+$main-color: #abcdef;
+$background-color: #fff;
+$list-item-height: 40px;
+
+*{
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 16px;
+  font-weight: 300;
+}
+
+html, body{
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  font-family: "courier new", courier, serif;
+  color: $main-color;
+  animation: colorChange 10s linear infinite;
+}
+
+a{
+  color: currentColor;
+}
+// Structure
+main{
+  padding: 1em 0 3em;
+  width: 100%;
+
+  header{
+    text-align: center;
+    h1{
+      font-size: 3em;
+      padding-bottom: 0;
+      strong{
+        font-weight: bold;
+      }
+    }
+    a{
+      color: currentColor;
+    }
+  }
+
+  article{
+    width: 90%;
+    margin: auto;
+    padding: 0;
+
+    ul{
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      counter-reset: items;
+
+      li{
+        width: 100%;
+        color: currentColor;
+        display: block;
+        float: left;
+        padding: 0;
+        margin: .5em 0;
+        border: .5em solid currentColor;
+        box-shadow: 4px 4px 0 $background-color, 8px 8px 0 currentColor;
+        -webkit-box-shadow: 4px 4px 0 $background-color, 8px 8px 0 rgba(black, .05);
+        counter-increment: item;
+        border-radius: 2px;
+        position: relative;
+
+        &:last-child{
+          margin-bottom: 2em;
+        }
+
+        &:before{
+          content: counter(item);
+          position: absolute;
+          width: 50px;
+          height: 100%;
+          text-align: center;
+          font-size: 1.5em;
+          line-height: 70px;
+          float: left;
+          display: block;
+          left: 0;
+        }
+
+        a{
+          padding-left: 54px;
+          text-decoration: none;
+          color: currentColor;
+          display: block;
+          float: left;
+          width: 100%;
+          height: $list-item-height;
+          line-height: 0;
+          padding: 2em 0;
+          margin-left: 55px;
+          font-size: 1.1em;
+        }
+
+        &:hover{
+          background: currentColor;
+          a{color: #fff;}
+          &:before{
+            color: $background-color
+          }
+        }
+      }
+    }
+  }
+}
+
+footer{
+  text-align: center;
+  float: left;
+  width: 100%;
+  padding-bottom: 1em;
+
+  a{
+    font-weight: bold;
+    text-decoration: none;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
+
+
+@keyframes colorChange{
+  33%{
+    color: #FF7123;
+  }
+  66%{
+    color: #89E051;
+  }
+  99%{
+    color: #abcdef;
+  }
+}
