@@ -1,1 +1,0 @@
-console.log('Hello world, bullgit to the rescue ! You need to find some unicodes symbols ? You\'re on the right place for it!')
