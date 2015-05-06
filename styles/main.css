@@ -6,7 +6,7 @@
 
 :root {
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 600;
 }
 
 html, body {
@@ -19,8 +19,8 @@ html, body {
 body {
   font-family: "courier new", courier, serif;
   color: #abcdef;
-  -webkit-animation: colorChange 10s linear infinite;
-  animation: colorChange 10s linear infinite;
+  -webkit-animation: colorChange 20s linear infinite;
+  animation: colorChange 20s linear infinite;
 }
 
 a {
@@ -40,6 +40,8 @@ main header h1 {
 }
 main header h1 strong {
   font-weight: bold;
+  font-size: .85em;
+  padding: 0 .08em;
 }
 main header a {
   color: currentColor;
@@ -114,7 +116,7 @@ footer {
   padding-bottom: 1em;
 }
 footer a {
-  font-weight: bold;
+  font-weight: 800;
   text-decoration: none;
 }
 footer a:hover {

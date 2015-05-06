@@ -11,7 +11,7 @@ $list-item-height: 40px;
 
 :root{
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 600;
 }
 
 html, body{
@@ -24,7 +24,7 @@ html, body{
 body{
   font-family: "courier new", courier, serif;
   color: $main-color;
-  animation: colorChange 10s linear infinite;
+  animation: colorChange 20s linear infinite;
 }
 
 a{
@@ -37,13 +37,18 @@ main{
 
   header{
     text-align: center;
+    
     h1{
       font-size: 3em;
       padding-bottom: 0;
+
       strong{
         font-weight: bold;
+        font-size: .85em;
+        padding: 0 .08em;
       }
     }
+
     a{
       color: currentColor;
     }
@@ -124,7 +129,7 @@ footer{
   padding-bottom: 1em;
 
   a{
-    font-weight: bold;
+    font-weight: 800;
     text-decoration: none;
     &:hover{
       text-decoration: underline;
