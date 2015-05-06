@@ -1,7 +1,1 @@
-
-var img = document.getElementsByTagName('img')
-img.forEach.call(document.querySelectorAll("a"), function(el) {
-  el.addEventListener("click", function() {
-   this.classList.toggle("animated");
-  });
-});
+console.log('Hello world, bullgit to the rescue ! You need to find some unicodes symbols ? You\'re on the right place for it!')
