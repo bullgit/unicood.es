@@ -70,6 +70,9 @@ main article ul li {
   counter-increment: item;
   border-radius: 2px;
   position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 main article ul li:last-child {
   margin-bottom: 2em;
