@@ -1,6 +1,7 @@
 $(function(){
 
   all_links = [
+  "http://symbolhound.com",
   "http://shapecatcher.com/",
   "http://htmlarrows.com/",
   "http://unicode-table.com/en/",
